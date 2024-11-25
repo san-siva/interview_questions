@@ -9,3 +9,16 @@ const exploreOut = (element, threshold) => {
 	return [];
 };
 ```
+
+Output format,
+
+```txt
+[
+  [p1, p2, p3],        // Direct parents at the current level
+  [
+    c1,                // Child element 1
+    [c1a, c1b, c1c]    // Nested children of c1 (grandchildren of p1)
+  ],
+  [c2]                 // Another child at the same level
+]
+```
